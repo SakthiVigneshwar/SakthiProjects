@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* General Reset and Body Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b8c6db;
+  background-image: url('uciha\ itachi.jpg'); /* Ensure this path is correct or replace with your own background image */
+  background-attachment: fixed; /* Keep the background image fixed */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: unset; /* Center the background image */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Adjust to auto to allow scrolling */
+  margin: 0; /* Reset margin to avoid unexpected spacing */
+}
+
+/* Admin Container Styles */
+.admin-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  padding: 2rem;
+  text-align: center;
+  overflow: auto; /* Ensure the container allows scrolling if necessary */
+}
+
+.admin-container h2 {
+  margin-bottom: 1rem;
+}
+
+#questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#questionForm label {
+  font-weight: bold;
+}
+
+#questionForm input,
+#questionForm select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#questionForm button {
+  background-color: #03cae4;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+#questionForm button:hover {
+  background-color: #04adc4;
+}
+
+#feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* User Page Styles */
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 800px;
+  padding: 2rem;
+  position: relative;
+}
+
+.quiz-header {
+  padding: 2rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-color: #03cae4;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #04adc4;
+}
+
+button:focus {
+  outline: none;
+  background-color: #44b927;
+}
