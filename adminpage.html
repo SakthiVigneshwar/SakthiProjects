@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Page</h2>
+        <form id="questionForm">
+            <label for="question">Question:</label>
+            <input type="text" id="question" required>
+            
+            <label for="a">Option A:</label>
+            <input type="text" id="a" required>
+            
+            <label for="b">Option B:</label>
+            <input type="text" id="b" required>
+            
+            <label for="c">Option C:</label>
+            <input type="text" id="c" required>
+            
+            <label for="d">Option D:</label>
+            <input type="text" id="d" required>
+            
+            <label for="correct">Correct Option:</label>
+            <select id="correct" required>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+            </select>
+            
+            <button type="submit">Add Question</button>
+        </form>
+        <div id="feedback"></div>
+        <h3>Existing Questions</h3>
+        <ul id="questionsList"></ul>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
